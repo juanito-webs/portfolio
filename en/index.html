@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Juan Orlievsky — Senior Copywriter</title>
+<style>
+:root{--blue:#0000ff;--line:#0000ff;--pad:22px;--sidebar:238px;--gap:14px}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:var(--blue);font-family:Helvetica,Arial,sans-serif}
+a{color:inherit}
+body{min-height:100vh;padding:var(--pad)}
+.shell{min-height:calc(100vh - 44px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:var(--sidebar) minmax(0,1fr)}
+.sidebar{border-right:1px solid var(--line);padding:18px 18px 24px 0;display:flex;flex-direction:column;position:sticky;top:var(--pad);height:calc(100vh - 44px)}
+.identity{padding-bottom:18px;border-bottom:1px solid var(--line)}
+.name{font-size:25px;line-height:.94;font-weight:700;letter-spacing:-.055em;margin-bottom:12px}
+.role,.agency{font-size:13px;line-height:1.25;letter-spacing:-.015em}
+.nav{padding-top:16px;display:flex;flex-direction:column;gap:4px}
+.nav a{font-size:13px;line-height:1.25;text-decoration:none;width:max-content}
+.nav a:hover{text-decoration:underline;text-underline-offset:3px}
+.index-note{margin-top:auto;font-size:10px;line-height:1.25;text-transform:uppercase;letter-spacing:.02em}.index-note .aguante{color:var(--blue)}.index-note .boca{color:#ffd500}
+.content{padding-left:var(--gap)}
+.topbar{height:55px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;font-size:11px;text-transform:uppercase;letter-spacing:.02em}
+.topbar .right{padding-right:2px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 var(--gap);padding:var(--gap) 0 48px}
+.project{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;text-decoration:none;background:#eee;margin-bottom:var(--gap);border-radius:13px}
+.project img{display:block;width:100%;height:100%;object-fit:cover;transition:filter .2s ease,transform .35s ease}
+.project::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0);transition:background .2s ease}
+.label{position:absolute;z-index:2;left:50%;top:50%;width:calc(100% - 30px);text-align:center;color:#fff;font-size:18px;line-height:1;font-weight:700;letter-spacing:-.035em;text-transform:uppercase;opacity:0;transform:translate(-50%,-46%);transition:opacity .18s ease,transform .18s ease}
+.label{width:max-content;max-width:calc(100% - 30px);background:var(--blue);padding:7px 10px 6px;border-radius:2px}
+.project:hover::after{background:rgba(0,0,0,.30)}
+.project:hover img{filter:brightness(.84);transform:scale(1.006)}
+.project:hover .label{opacity:1;transform:translate(-50%,-50%)}
+.project:nth-child(odd){grid-column:1}.project:nth-child(even){grid-column:2}
+.footerline{grid-column:1/-1;border-top:1px solid var(--line);margin-top:2px;padding-top:10px;display:flex;justify-content:space-between;font-size:10px;text-transform:uppercase}
+@media(max-width:820px){:root{--sidebar:190px}.name{font-size:21px}.label{font-size:15px}.topbar{height:48px}}
+@media(max-width:650px){body{padding:14px}.shell{display:block;border-bottom:0}.sidebar{position:relative;top:auto;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:15px 0}.identity{border-bottom:0;padding:0}.nav{flex-direction:row;gap:16px}.index-note{display:none}.content{padding-left:0}.topbar{height:42px}.grid{display:block;padding-top:12px}.project{width:100%;margin-bottom:12px}.label{opacity:1;transform:translate(-50%,-50%)}.project::after{background:rgba(0,0,0,.16)}}
+@media(hover:none){.label{opacity:1;transform:translate(-50%,-50%)}.project::after{background:rgba(0,0,0,.16)}}
+.name a{text-decoration:none}</style>
+<link rel="alternate" hreflang="es" href="https://juanito-webs.github.io/portfolio/index.html"><link rel="alternate" hreflang="en" href="https://juanito-webs.github.io/portfolio/en/index.html"><style>.lang{margin-top:auto;display:flex;gap:14px;font-size:11px;letter-spacing:.02em;padding-bottom:12px}.lang a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;opacity:.55}.lang a:hover{opacity:1}.lang a.on{opacity:1;text-decoration:underline;text-underline-offset:3px}.lang .flag{width:18px;height:12px;display:block;border-radius:1px;box-shadow:0 0 0 .5px rgba(0,0,0,.15)}.index-note{margin-top:0!important}@media(max-width:650px){.lang{margin-top:12px;padding-bottom:0}}</style></head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="identity">
+      <div class="name"><a href="index.html">Juan Orlievsky</a></div>
+      <div class="role">Senior Copywriter</div>
+      <div class="agency">GUT Buenos Aires</div>
+    </div>
+    <nav class="nav">
+      <a href="premios.html">Awards</a>
+      <a href="about-me.html">About me</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="lang"><a href="../index.html" hreflang="es" lang="es" class="" aria-label="Español"><svg class="flag" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#74ACDF"/><rect y="4" width="18" height="4" fill="#fff"/><circle cx="9" cy="6" r="1.4" fill="#F6B40E"/></svg>ES</a><a href="index.html" hreflang="en" lang="en" class="on" aria-label="English"><svg class="flag" viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#B22234"/><g fill="#fff"><rect y="1.85" width="18" height=".92"/><rect y="3.7" width="18" height=".92"/><rect y="5.54" width="18" height=".92"/><rect y="7.38" width="18" height=".92"/><rect y="9.23" width="18" height=".92"/><rect y="11.08" width="18" height=".92"/></g><rect width="7.6" height="6.46" fill="#3C3B6E"/></svg>EN</a></div><div class="index-note"><span class="aguante">AGUANTE</span> <span class="boca">BOCA</span></div>
+  </aside>
+  <main class="content">
+    <header class="topbar"><span>Portfolio</span><span class="right">Based in Buenos Aires</span></header>
+    <section id="portfolio" class="grid">
+      <a class="project" href="grwm-para-el-entierro.html"><img src="../assets/thumbnail_grwm.png" alt="GRWM para el entierro"><div class="label">GRWM PARA EL ENTIERRO</div></a>
+      <a class="project" href="merlinismos.html"><img src="../assets/thumbnail_merlinismos.jpg" alt="Merlinismos"><div class="label">MERLINISMOS</div></a>
+      <a class="project" href="segundo-francia.html"><img src="../assets/thumbnail_segundo_francia.png" alt="Segundo, Francia"><div class="label">SEGUNDO, FRANCIA</div></a>
+      <a class="project" href="memerabilia.html"><img src="../assets/thumbnail_memerabilia.png" alt="Memerabilia"><div class="label">MEMERABILIA</div></a>
+      <a class="project" href="el-pasado-presente.html"><img src="../assets/thumbnail_pasado_presente.png" alt="El pasado, presente"><div class="label">EL PASADO, PRESENTE</div></a>
+      <a class="project" href="el-npc-perdido.html"><img src="../assets/thumbnail_npc_perdido.png" alt="El NPC Perdido"><div class="label">EL NPC PERDIDO</div></a>
+      <div class="footerline"><span>6 projects</span><span>Juan Orlievsky ©</span></div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
